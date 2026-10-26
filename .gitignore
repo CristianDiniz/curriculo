@@ -1,0 +1,7 @@
+# Sistema operacional e caches
+Thumbs.db
+.DS_Store
+*.swp
+*.bak
+.vscode/
+.idea/
