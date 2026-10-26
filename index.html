@@ -1,91 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
+
 <head>
-  <meta charset="utf-8">
+  <!-- Metadados Fundamentais & Validação W3C -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristian Henrique Diniz | Desenvolvedor Back-End (Python, Django, Docker, APIs REST)</title>
-  <meta name="description" content="Currículo e portfólio técnico de Cristian Henrique Diniz, Desenvolvedor Back-End especializado em Python, Django, Docker, modelagem de banco de dados e APIs RESTful.">
+
+  <title>Cristian Henrique Diniz | Desenvolvedor Back-End &amp; Especialista em Python</title>
+
+  <!-- SEO & Acessibilidade Lighthouse -->
+  <meta name="description"
+    content="Portfólio e perfil profissional de Cristian Henrique Diniz, Desenvolvedor Back-End especializado em Python, Django, Docker, bancos de dados relacionais e APIs RESTful escaláveis.">
   <meta name="author" content="Cristian Henrique Diniz">
-  <meta name="robots" content="index, follow">
+  <meta name="creator" content="Cristian Henrique Diniz">
+  <meta name="publisher" content="Cristian Henrique Diniz">
   <link rel="canonical" href="https://cristiandiniz.github.io/">
 
-  <!-- Open Graph / LinkedIn / Facebook -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Cristian Henrique Diniz | Desenvolvedor Back-End">
-  <meta property="og:description" content="Desenvolvedor Back-End especializado em Python, Django, Docker, APIs RESTful e modelagem relacional.">
-  <meta property="og:url" content="https://cristiandiniz.github.io/">
-  <meta property="og:site_name" content="Portfólio Back-End - Cristian Diniz">
+  <!-- Diretivas para Crawlers Tradicionais e Mecanismos Generativos (GEO / LLMs) -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Otimização de Performance (Google Fonts Inter com preconnect ativo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon & PWA Hints para Lighthouse -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- Open Graph / Redes Sociais e AI Previews -->
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Cristian Henrique Diniz | Desenvolvedor Back-End &amp; Especialista em Python">
+  <meta property="og:description"
+    content="Engenharia de software, desenvolvimento back-end com Python, Django REST, Docker, microsserviços e banco de dados relacionais.">
+  <meta property="og:url" content="https://cristiandiniz.github.io/">
+  <meta property="og:site_name" content="Cristian Diniz Tech">
+  <meta property="og:image" content="https://cristiandiniz.github.io/assets/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://cristiandiniz.github.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Apresentação profissional de Cristian Henrique Diniz">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cristian Henrique Diniz | Desenvolvedor Back-End">
-  <meta name="twitter:description" content="Desenvolvedor Back-End focado em Python, Django, Docker e arquitetura de microsserviços/APIs REST.">
+  <meta name="twitter:description"
+    content="Engenharia de software, desenvolvimento back-end com Python, Django REST, Docker, microsserviços e banco de dados relacionais.">
+  <meta name="twitter:image" content="https://cristiandiniz.github.io/assets/og-image.jpg">
 
-  <!-- GEO (Generative Engine Optimization) - Schema.org JSON-LD -->
+  <!-- GEO (Generative Engine Optimization) - Schema.org Knowledge Graph em JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Cristian Henrique Diniz",
-      "alternateName": "Cristian Diniz",
-      "jobTitle": "Desenvolvedor Back-End",
-      "description": "Desenvolvedor de software focado em engenharia de back-end com Python, Django REST Framework, Docker, MySQL, PostgreSQL e arquitetura de microsserviços.",
-      "email": "mailto:cristianhenrrique706@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Araraquara",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cristiandiniz.github.io/#website",
+        "url": "https://cristiandiniz.github.io/",
+        "name": "Cristian Henrique Diniz | Portfólio Profissional Back-End",
+        "description": "Portfólio técnico e documentação de engenharia de software back-end, arquiteturas REST e microsserviços.",
+        "publisher": {
+          "@id": "https://cristiandiniz.github.io/#person"
+        },
+        "inLanguage": "pt-BR"
       },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "SENAC São Paulo",
-        "location": "Araraquara, SP"
+      {
+        "@type": "ProfilePage",
+        "@id": "https://cristiandiniz.github.io/#webpage",
+        "url": "https://cristiandiniz.github.io/",
+        "name": "Cristian Henrique Diniz - Desenvolvedor Back-End",
+        "isPartOf": {
+          "@id": "https://cristiandiniz.github.io/#website"
+        },
+        "about": {
+          "@id": "https://cristiandiniz.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://cristiandiniz.github.io/#person"
+        },
+        "inLanguage": "pt-BR"
       },
-      "sameAs": [
-        "https://github.com/CristianDiniz",
-        "https://www.linkedin.com/in/cristian-henrique-diniz-539a863b1/"
-      ],
-      "knowsAbout": [
-        "Python",
-        "Django",
-        "Django REST Framework",
-        "Docker",
-        "Docker Compose",
-        "APIs RESTful",
-        "MySQL",
-        "PostgreSQL",
-        "SQLite",
-        "Testes Automatizados",
-        "Pytest",
-        "Unittest",
-        "Clean Architecture",
-        "SOLID",
-        "Git",
-        "CI/CD",
-        "GitHub Actions",
-        "YOLOv8",
-        "Nginx Reverse Proxy"
-      ]
-    }
+      {
+        "@type": "Person",
+        "@id": "https://cristiandiniz.github.io/#person",
+        "name": "Cristian Henrique Diniz",
+        "alternateName": "Cristian Diniz",
+        "url": "https://cristiandiniz.github.io/",
+        "jobTitle": "Desenvolvedor Back-End",
+        "email": "mailto:cristianhenrrique706@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Araraquara",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "SENAC São Paulo",
+          "location": "Araraquara, SP"
+        },
+        "sameAs": [
+          "https://github.com/CristianDiniz",
+          "https://www.linkedin.com/in/cristian-henrique-diniz-539a863b1/"
+        ],
+        "knowsAbout": [
+          "Python",
+          "Django",
+          "Django REST Framework",
+          "Docker",
+          "Docker Compose",
+          "MySQL",
+          "PostgreSQL",
+          "SQLite",
+          "REST APIs",
+          "Arquitetura de Software",
+          "Clean Architecture",
+          "SOLID",
+          "Testes Automatizados (Pytest, Unittest)",
+          "CI/CD",
+          "GitHub Actions",
+          "Visão Computacional (YOLOv8)",
+          "Nginx Reverse Proxy"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Back-End Software Engineer",
+          "skills": "Python, Django, Docker, MySQL, PostgreSQL, REST APIs, Microservices, CI/CD"
+        }
+      }
+    ]
   }
   </script>
 
+  <!-- Estilização Técnica, Minimalista e Acessível (Sem frameworks pesados de frontend) -->
   <style>
     :root {
-      --bg: #0d1117;
-      --card-bg: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --text-muted: #8b949e;
-      --accent: #58a6ff;
-      --green: #3fb950;
-      --tag-bg: #21262d;
-      --font-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-color: #38bdf8;
+      --accent-hover: #0284c7;
+      --green-tag: #4ade80;
+      --tag-bg: #0f172a;
+      --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
 
     * {
@@ -95,12 +159,14 @@
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font-sans);
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-stack);
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
       padding: 2.5rem 1rem;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
@@ -109,193 +175,219 @@
     }
 
     header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.75rem;
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      color: var(--text);
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-
-    .subtitle {
-      font-family: var(--font-mono);
-      color: var(--accent);
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-
-    .contact-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.35rem 0.75rem;
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-family: var(--font-mono);
-      transition: border-color 0.2s, background-color 0.2s;
-    }
-
-    .contact-links a:hover,
-    .contact-links a:focus {
-      border-color: var(--accent);
-      background-color: var(--tag-bg);
-      outline: none;
-    }
-
-    section {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 2rem;
       margin-bottom: 2.5rem;
     }
 
-    h2 {
-      font-size: 1.35rem;
-      color: var(--text);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.4rem;
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.025em;
+      margin-bottom: 0.35rem;
+    }
+
+    .role-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--accent-color);
+      font-weight: 600;
       margin-bottom: 1rem;
+    }
+
+    .lead-text {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      max-width: 780px;
+    }
+
+    .nav-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .nav-contacts a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    }
+
+    .nav-contacts a:hover,
+    .nav-contacts a:focus-visible {
+      border-color: var(--accent-color);
+      background-color: #273548;
+      color: var(--accent-color);
+      outline: 2px solid var(--accent-color);
+      outline-offset: 2px;
+    }
+
+    .location-info {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding: 0.4rem 0.5rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.45rem;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      letter-spacing: -0.01em;
     }
 
     h2::before {
       content: "#";
-      color: var(--accent);
+      color: var(--accent-color);
       font-family: var(--font-mono);
       font-weight: 400;
     }
 
     h3 {
       font-size: 1.15rem;
-      color: var(--text);
-      margin-bottom: 0.35rem;
-    }
-
-    p {
-      color: var(--text);
-      margin-bottom: 0.75rem;
-    }
-
-    .bio-text {
-      font-size: 1rem;
-      color: #c9d1d9;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-    }
-
-    .card-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-header a {
-      color: var(--accent);
-      text-decoration: none;
       font-weight: 600;
-      font-size: 1.1rem;
+      color: var(--text-main);
     }
 
-    .card-header a:hover,
-    .card-header a:focus {
-      text-decoration: underline;
+    .content-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.35rem;
     }
 
-    .badge {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      padding: 0.15rem 0.5rem;
-      border-radius: 20px;
-      background-color: rgba(63, 185, 80, 0.15);
-      color: var(--green);
-      border: 1px solid rgba(63, 185, 80, 0.4);
+    .content-card p {
+      color: var(--text-muted);
+      margin-bottom: 0.85rem;
     }
 
-    .card ul {
+    .content-card ul {
       list-style-type: square;
       padding-left: 1.25rem;
-      color: #c9d1d9;
+      color: var(--text-muted);
       font-size: 0.95rem;
     }
 
-    .card li {
-      margin-bottom: 0.35rem;
+    .content-card li {
+      margin-bottom: 0.45rem;
     }
 
-    .tech-grid {
+    .content-card strong {
+      color: var(--text-main);
+    }
+
+    .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1rem;
     }
 
-    .tech-category {
+    .skill-card {
       background-color: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.15rem;
     }
 
-    .tech-category h3 {
+    .skill-card h3 {
       font-family: var(--font-mono);
-      font-size: 0.95rem;
-      color: var(--accent);
-      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.05em;
+      color: var(--accent-color);
+      margin-bottom: 0.75rem;
     }
 
-    .tags {
+    .tags-list {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
     }
 
-    .tag {
+    .tag-item {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       padding: 0.2rem 0.55rem;
       background-color: var(--tag-bg);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-color);
       border-radius: 4px;
-      color: #c9d1d9;
+      color: #cbd5e1;
     }
 
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      font-family: var(--font-mono);
+    .project-header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-header a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15rem;
+    }
+
+    .project-header a:hover,
+    .project-header a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    .pill-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      background-color: rgba(74, 222, 128, 0.12);
+      color: var(--green-tag);
+      border: 1px solid rgba(74, 222, 128, 0.35);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
     }
 
     footer a {
@@ -303,179 +395,182 @@
       text-decoration: underline;
     }
 
-    footer a:hover {
-      color: var(--text);
+    footer a:hover,
+    footer a:focus-visible {
+      color: var(--text-main);
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Header / Apresentação -->
+    <!-- Header Semântico com Identidade & Contatos -->
     <header>
       <h1>Cristian Henrique Diniz</h1>
-      <p class="subtitle">&gt; Desenvolvedor Back-End | Python • Django • Docker • APIs REST</p>
-      <p class="bio-text">
-        Desenvolvedor focado em engenharia de software back-end, arquitetura de APIs RESTful, modelagem de dados e conteinerização. Especializado no ecossistema Python com foco em estabilidade, segurança e boas práticas de código limpo.
+      <span class="role-badge">&gt; Desenvolvedor Back-End | Python • Django • Docker • APIs REST</span>
+      <p class="lead-text">
+        Engenheiro de software especializado no lado do servidor. Construção de APIs RESTful escaláveis, microsserviços, modelagem avançada de banco de dados e arquitetura de sistemas com foco em estabilidade, segurança e boas práticas.
       </p>
 
-      <nav aria-label="Links de contato profissional">
-        <div class="contact-links">
-          <a href="https://github.com/CristianDiniz" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil de Cristian Diniz no GitHub">
-            <span>GitHub: CristianDiniz</span>
-          </a>
-          <a href="https://www.linkedin.com/in/cristian-henrique-diniz-539a863b1/" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil de Cristian Diniz no LinkedIn">
-            <span>LinkedIn: cristian-henrique-diniz</span>
-          </a>
-          <a href="mailto:cristianhenrrique706@gmail.com" aria-label="Enviar e-mail para Cristian Diniz">
-            <span>cristianhenrrique706@gmail.com</span>
-          </a>
-          <span class="tag" style="align-self: center;">📍 Araraquara – SP, Brasil</span>
-        </div>
+      <nav aria-label="Contatos e Redes Profissionais" class="nav-contacts">
+        <a href="https://github.com/CristianDiniz" target="_blank" rel="noopener noreferrer" aria-label="Perfil do GitHub de Cristian Diniz">
+          <span>GitHub: CristianDiniz</span>
+        </a>
+        <a href="https://www.linkedin.com/in/cristian-henrique-diniz-539a863b1/" target="_blank" rel="noopener noreferrer" aria-label="Perfil do LinkedIn de Cristian Diniz">
+          <span>LinkedIn: cristian-henrique-diniz</span>
+        </a>
+        <a href="mailto:cristianhenrrique706@gmail.com" aria-label="Enviar e-mail para Cristian Diniz">
+          <span>cristianhenrrique706@gmail.com</span>
+        </a>
+        <span class="location-info">📍 Araraquara – SP, Brasil</span>
       </nav>
     </header>
 
     <main>
-      <!-- Seção Sobre Mim / Síntese Profissional (Otimizada para GEO/LLMs) -->
-      <section aria-labelledby="sec-sobre">
-        <h2 id="sec-sobre">Sobre Mim &amp; Perfil Técnico</h2>
-        <div class="card">
-          <p class="bio-text">
-            Atuo no desenvolvimento de soluções robustas no lado do servidor, transformando requisitos de negócio em serviços de alta performance. Minha metodologia de trabalho prioriza:
+      <!-- Seção Sobre Mim & Princípios de Engenharia (Otimizada para GEO/LLMs) -->
+      <section aria-labelledby="heading-sobre">
+        <h2 id="heading-sobre">Sobre Mim &amp; Diretrizes Técnicas</h2>
+        <div class="content-card">
+          <p>
+            Minha atuação profissional tem foco estrito em engenharia de back-end, garantindo que regras de negócio complexas sejam traduzidas em código limpo, performático e auditável. Meus pilares de engenharia incluem:
           </p>
           <ul>
-            <li><strong>Arquitetura &amp; Design:</strong> Adoção de Clean Architecture, separação de responsabilidades (SOLID) e padrões RESTful.</li>
-            <li><strong>Integridade de Dados:</strong> Modelagem relacional estrita com ACID, migrations automatizadas e otimização de consultas ORM.</li>
-            <li><strong>Qualidade &amp; Testabilidade:</strong> Desenvolvimento orientado a testes (Pytest e Unittest), tratamento rigoroso de exceções e telemetria por logs.</li>
-            <li><strong>Entrega &amp; DevOps:</strong> Ambientes replicáveis com Docker Compose e esteiras de CI/CD via GitHub Actions.</li>
+            <li><strong>Arquitetura &amp; Design:</strong> Adoção dos princípios SOLID, Clean Architecture e padrão RESTful com endpoints idempotentes e previsíveis.</li>
+            <li><strong>Modelagem &amp; Persistência:</strong> Modelagem relacional estrita com garantia ACID, otimização de queries via Django ORM e migrações rastreáveis.</li>
+            <li><strong>Segurança &amp; Autenticação:</strong> Implementação de autenticação JWT/Session, autorização granular por perfis e validação rigorosa de payloads.</li>
+            <li><strong>DevOps &amp; Qualidade:</strong> Conteinerização com Docker e Docker Compose, pipelines de integração contínua (CI/CD) e testes automatizados (Pytest/Unittest).</li>
           </ul>
         </div>
       </section>
 
-      <!-- Seção Competências Técnicas (Hard Skills) -->
-      <section aria-labelledby="sec-skills">
-        <h2 id="sec-skills">Stack Tecnológica &amp; Habilidades</h2>
-        <div class="tech-grid">
-          <article class="tech-category">
-            <h3>Back-End &amp; Linguagens</h3>
-            <div class="tags">
-              <span class="tag">Python 3</span>
-              <span class="tag">Django</span>
-              <span class="tag">Django REST</span>
-              <span class="tag">APIs RESTful</span>
-              <span class="tag">Pytest / Unittest</span>
-              <span class="tag">Clean Code</span>
-              <span class="tag">SOLID</span>
+      <!-- Seção Stack Tecnológica & Competências -->
+      <section aria-labelledby="heading-skills">
+        <h2 id="heading-skills">Stack Tecnológica &amp; Competências</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Linguagens &amp; Frameworks</h3>
+            <div class="tags-list">
+              <span class="tag-item">Python 3</span>
+              <span class="tag-item">Django</span>
+              <span class="tag-item">Django REST Framework</span>
+              <span class="tag-item">RESTful APIs</span>
+              <span class="tag-item">Pytest</span>
+              <span class="tag-item">Unittest</span>
+              <span class="tag-item">Clean Code</span>
+              <span class="tag-item">SOLID</span>
             </div>
           </article>
 
-          <article class="tech-category">
+          <article class="skill-card">
             <h3>Bancos de Dados &amp; ORM</h3>
-            <div class="tags">
-              <span class="tag">MySQL</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">Django ORM</span>
-              <span class="tag">Modelagem Relacional</span>
-              <span class="tag">Migrations</span>
+            <div class="tags-list">
+              <span class="tag-item">MySQL</span>
+              <span class="tag-item">PostgreSQL</span>
+              <span class="tag-item">SQLite</span>
+              <span class="tag-item">Django ORM</span>
+              <span class="tag-item">Modelagem Relacional</span>
+              <span class="tag-item">Transações ACID</span>
+              <span class="tag-item">Migrations</span>
             </div>
           </article>
 
-          <article class="tech-category">
+          <article class="skill-card">
             <h3>DevOps &amp; Infraestrutura</h3>
-            <div class="tags">
-              <span class="tag">Docker</span>
-              <span class="tag">Docker Compose</span>
-              <span class="tag">Nginx Proxy</span>
-              <span class="tag">Git &amp; GitHub Flow</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Linux / Bash</span>
+            <div class="tags-list">
+              <span class="tag-item">Docker</span>
+              <span class="tag-item">Docker Compose</span>
+              <span class="tag-item">Nginx Reverse Proxy</span>
+              <span class="tag-item">Git &amp; GitHub Flow</span>
+              <span class="tag-item">GitHub Actions (CI/CD)</span>
+              <span class="tag-item">Linux / Shell</span>
             </div>
           </article>
 
-          <article class="tech-category">
-            <h3>Integrações &amp; Especialidades</h3>
-            <div class="tags">
-              <span class="tag">Visão Computacional (YOLO)</span>
-              <span class="tag">WhatsApp API</span>
-              <span class="tag">Autenticação JWT / Session</span>
-              <span class="tag">Telemetria &amp; Logs</span>
+          <article class="skill-card">
+            <h3>Integrações &amp; Visão Computacional</h3>
+            <div class="tags-list">
+              <span class="tag-item">YOLOv8 (Visão IA)</span>
+              <span class="tag-item">OpenNSFW2</span>
+              <span class="tag-item">WhatsApp API</span>
+              <span class="tag-item">Telemetria &amp; Logs</span>
+              <span class="tag-item">Autenticação JWT</span>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- Seção Projetos Reais de Back-End -->
-      <section aria-labelledby="sec-projetos">
-        <h2 id="sec-projetos">Projetos em Destaque</h2>
+      <!-- Seção Projetos Reais de Engenharia de Back-End -->
+      <section aria-labelledby="heading-projetos">
+        <h2 id="heading-projetos">Projetos em Destaque</h2>
 
         <!-- Projeto 1: Best Buddy -->
-        <article class="card">
-          <div class="card-header">
+        <article class="content-card">
+          <div class="project-header">
             <h3>
               <a href="https://github.com/CristianDiniz/Best_Buddy" target="_blank" rel="noopener noreferrer">
-                Best Buddy — Plataforma de Adoção de Animais
+                Best Buddy — Plataforma Corporativa de Adoção Pet
               </a>
             </h3>
-            <span class="badge">Django REST • YOLOv8 • Docker</span>
+            <span class="pill-badge">Django REST • YOLOv8 • Docker</span>
           </div>
-          <p class="bio-text">
-            Sistema corporativo para intermediação segura de adoções de animais com triagem automatizada e auditoria via inteligência artificial.
+          <p>
+            Sistema corporativo para intermediação e triagem automatizada de processos de adoção responsável com validação inteligente de dados.
           </p>
           <ul>
-            <li><strong>Pipeline com IA:</strong> Integração de modelo YOLOv8 para validação automatizada de fotos submetidas, prevenindo envio de imagens impróprias ou incompatíveis.</li>
-            <li><strong>Autenticação &amp; Permissões:</strong> Camada de segurança para separação de papéis entre adotantes, protetores e administração do sistema.</li>
-            <li><strong>Infraestrutura:</strong> Conteinerização completa com Docker Compose, telemetria com rotação de arquivos de log e suite de testes unitários.</li>
+            <li><strong>Auditoria com IA:</strong> Pipeline de validação assíncrona de uploads de fotos com <strong>YOLOv8</strong> e <strong>OpenNSFW2</strong>, evitando imagens inadequadas no acervo.</li>
+            <li><strong>Segurança:</strong> Controle de acesso baseado em papéis (RBAC) para adotantes, protetores e auditores.</li>
+            <li><strong>Infraestrutura:</strong> Conteinerização completa com Docker Compose, telemetria estruturada e esteira de testes automatizados com cobertura unitária.</li>
           </ul>
         </article>
 
         <!-- Projeto 2: Agenda da Beleza (Calender) -->
-        <article class="card">
-          <div class="card-header">
+        <article class="content-card">
+          <div class="project-header">
             <h3>
               <a href="https://github.com/CristianDiniz/calender" target="_blank" rel="noopener noreferrer">
                 Agenda da Beleza — Sistema SaaS de Gestão de Atendimentos
               </a>
             </h3>
-            <span class="badge">Python • Django • Nginx • Docker</span>
+            <span class="pill-badge">Python • Django • Nginx • Docker</span>
           </div>
-          <p class="bio-text">
-            Plataforma SaaS para controle de fluxo de atendimento, alocação de profissionais e consolidação financeira para estabelecimentos de estética.
+          <p>
+            Plataforma SaaS para fluxo de agendamentos em clínicas e salões de estética, alocação de profissionais e gestão financeira.
           </p>
           <ul>
-            <li><strong>Regras de Negócio &amp; Concorrência:</strong> Algoritmo para resolução e prevenção de conflitos de agendamento em tempo real por profissional e serviço.</li>
-            <li><strong>Integração de Mensageria:</strong> Disparo automatizado de confirmações e lembretes aos clientes via API de mensageria (WhatsApp).</li>
-            <li><strong>Arquitetura &amp; Proxy:</strong> Orquestrado com Docker e Nginx como reverse proxy, assegurando estabilidade em produção.</li>
+            <li><strong>Concorrência de Agendamentos:</strong> Motor de regras transacionais para prevenção ativa de conflitos de horário entre especialistas e procedimentos.</li>
+            <li><strong>Mensageria Automatizada:</strong> Integração via API de WhatsApp para confirmação em tempo real e notificações automáticas de lembrete aos clientes.</li>
+            <li><strong>Orquestração:</strong> Desdobramento em microsserviços via Docker com Nginx atuando como proxy reverso e gerenciador de conexões.</li>
           </ul>
         </article>
 
-        <!-- Projeto 3: Sistema de Gestão Bibliotecária -->
-        <article class="card">
-          <div class="card-header">
-            <h3>Sistema de Gestão Bibliotecária</h3>
-            <span class="badge">Python • Django • Modelagem Relacional</span>
+        <!-- Projeto 3: Microsserviço de Gestão Bibliotecária -->
+        <article class="content-card">
+          <div class="project-header">
+            <h3>Microsserviço de Gestão Bibliotecária</h3>
+            <span class="pill-badge">Python • Django • REST</span>
           </div>
-          <p class="bio-text">
-            Microsserviço de gestão de acervo, catálogo de títulos, controle de devoluções e relatórios administrativos.
+          <p>
+            Sistema transacional para controle de catálogo, empréstimos, cálculo automatizado de devoluções e relatórios administrativos.
           </p>
           <ul>
-            <li>Controle rigoroso de integridade referencial com validação de status de empréstimo e prazos.</li>
-            <li>Endpoints RESTful documentados para integração transparente entre serviços.</li>
+            <li>Modelagem de dados normalizada garantindo integridade referencial e auditoria de movimentações.</li>
+            <li>Endpoints RESTful documentados para integração transparente entre sistemas legados.</li>
           </ul>
         </article>
       </section>
 
       <!-- Seção Formação Acadêmica -->
-      <section aria-labelledby="sec-formacao">
-        <h2 id="sec-formacao">Formação Acadêmica</h2>
-        <div class="card">
-          <div class="card-header">
+      <section aria-labelledby="heading-formacao">
+        <h2 id="heading-formacao">Formação Acadêmica</h2>
+        <div class="content-card">
+          <div class="project-header">
             <h3>Técnico em Informática</h3>
-            <span class="badge">Em andamento</span>
+            <span class="pill-badge">Em formação</span>
           </div>
-          <p class="bio-text"><strong>Instituição:</strong> SENAC São Paulo — Unidade Araraquara</p>
-          <p class="bio-text">
-            Formação técnica com ênfase em desenvolvimento de sistemas, engenharia de software, modelagem e administração de bancos de dados relacionais, redes e arquitetura de computadores.
+          <p><strong>Instituição de Ensino:</strong> SENAC São Paulo — Unidade Araraquara</p>
+          <p>
+            Formação técnica voltada à engenharia de software, modelagem relacional de dados, governança de redes e desenvolvimento de sistemas integrados.
           </p>
         </div>
       </section>
@@ -483,12 +578,13 @@
 
     <!-- Rodapé Semântico W3C -->
     <footer>
-      <span>&copy; 2026 Cristian Henrique Diniz. Código Aberto sob licença MIT.</span>
+      <span>&copy; 2026 Cristian Henrique Diniz. Código aberto sob licença MIT.</span>
       <span>
-        Código-fonte: <a href="https://github.com/CristianDiniz" target="_blank" rel="noopener noreferrer">github.com/CristianDiniz</a>
+        Repositório: <a href="https://github.com/CristianDiniz" target="_blank" rel="noopener noreferrer">github.com/CristianDiniz</a>
       </span>
     </footer>
 
   </div>
 </body>
+
 </html>
